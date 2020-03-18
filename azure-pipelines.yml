@@ -27,6 +27,3 @@ stages:
         dockerfile: '**/Dockerfile'
         tags: |
           $(tag)
-      
-container: 
-  SelfConatiner
