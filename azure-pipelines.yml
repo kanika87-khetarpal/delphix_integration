@@ -24,7 +24,8 @@ stages:
       displayName: Build an image
       inputs:
         command: buildAndPush
-        containerRegistry: mycontainerregistry.azurecr.io
+        repository: $(imageRepository)
         dockerfile: '**/Dockerfile'
+        containerRegistry: $(dockerRegistryServiceConnection)
         tags: |
           $(tag)
