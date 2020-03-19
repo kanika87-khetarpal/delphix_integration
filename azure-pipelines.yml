@@ -26,6 +26,6 @@ stages:
         command: buildAndPush
         repository: $(imageRepository)
         dockerfile: '**/Dockerfile'
-        containerRegistry: $(dockerRegistryServiceConnection)
+        containerRegistry: "/subscriptions/49fb12ba-6e6a-4456-9d33-453799f32290/resourceGroups/myapp-rg/providers/Microsoft.ContainerRegistry/registries/kanikaContainerRegistry"
         tags: |
           $(tag)
